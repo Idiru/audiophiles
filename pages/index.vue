@@ -1,6 +1,11 @@
 <template>
-  <navbar />
-  <header-hp/>
+  <div class="hero">
+    <navbar />
+    <header-hp/>
+  </div>
+  <div class="product-category-section">
+    <product-category/>
+  </div>
 </template>
 
 <style>
@@ -9,9 +14,66 @@
 
 
 body {
-  background-color: #131313;
+  padding: 0;
+  margin: 0;
 }
+
+nav {
+  width: auto;
+}
+
+@media (min-width: 1080px) {
+  .hero {
+    background-color: #121212;
+  }
+
+  .product-category-section {
+    height: 572px;
+  }
+}
+
+
+@media (max-width: 1080px) {
+
+  .hero {
+    background-color: #131313;
+}
+
+  nav {
+    position: relative;
+    z-index: 999;
+  }
+
+  hr {
+    position: relative;
+    z-index: 999;
+  }
+
+}
+
 </style>
 <script>
+
+/*
+const categoriesLinks = [
+
+ {
+    name: "headphones",
+    url: "../assets/shared/desktop/image-category-thumbnail-headphones.png"
+  },
+
+  {
+    name: "speakers",
+    url: "../assets/shared/desktop/image-category-thumbnail-speakers.png"
+  },
+
+  {
+    name: "earphones",
+    url: "../assets/shared/desktop/image-category-thumbnail-earphones.png"
+  }
+]
+
+
+ */
 
 </script>
