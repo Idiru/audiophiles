@@ -28,7 +28,13 @@ nav {
   }
 
   .product-category-section {
-    height: 572px;
+    padding: 120px 165px 0px 165px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 }
 

@@ -1,9 +1,13 @@
 <template>
   <div v-for="category in categories" class="container">
-    <img :src="category.image" :alt="category.name">
     <div class="container-content">
-      <p class="label">{{ category.name }}</p>
-      <button>SHOP<svg width="8" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.322 1l5 5-5 5" stroke="#D87D4A" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></button>
+      <div>
+        <img :src="category.image" :alt="category.name">
+      </div>
+      <div class="container-text">
+        <p class="label">{{ category.name }}</p>
+        <button>SHOP<svg width="8" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.322 1l5 5-5 5" stroke="#D87D4A" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></button>
+      </div>
     </div>
 
   </div>
@@ -41,17 +45,42 @@ return require(`~/assets/shared/desktop/${fileName}.png`)
 .container {
   width: 350px;
   height: 284px;
-  border: solid red;
   display: flex;
   flex-flow: column;
   text-align: center;
+  margin-top: 30px;
+}
+
+img {
+  position: relative;
+  z-index: 999;
+  width: 70%;
 }
 
 .container-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 0;
+}
+
+.container-text {
   width: 350px;
-  height: 204px;
+  height: 174px;
+  padding-bottom: 30px;
   background-color: #F1F1F1;
   border-radius: 8px;
+  position: relative;
+  bottom: 30%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.label {
+  padding-bottom: 16px;
 }
 
 p {
@@ -63,13 +92,10 @@ p {
   text-align: center;
   letter-spacing: 1.28571px;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
-.container-content {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
 
 button {
   font-family: 'Manrope';
@@ -79,9 +105,8 @@ button {
   line-height: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #000000;
+  color: #797979;
   mix-blend-mode: normal;
-  opacity: 0.5;
   border: none;
   display: flex;
   gap: 13px;
