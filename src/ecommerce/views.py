@@ -18,3 +18,12 @@ def article(request, numero_article):
 class productsViewSet(viewsets.ModelViewSet):
     queryset = Products.objects.all()
     serializer_class = ecommerceSerializer
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        name = self.request.query_params.get('name')
+        if name is not None:
+            queryset = queryset.filter(name=name)
+        return queryset
+
+
