@@ -24,14 +24,14 @@ nav {
 
 /* Desktop */
 
-@media (min-width: 1080px) {
+@media (min-width: 800px) {
   .hero {
     background-color: #121212;
-    height: 729px;
+    width: 100%;
   }
 
   .product-category-section {
-    padding: 120px 165px 0px 165px;
+    padding: 120px 165px 168px 165px;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -43,9 +43,10 @@ nav {
 
 /* Tablet */
 
-@media (min-width: 650px) and (max-width: 1070px) {
+@media (min-width: 650px) and (max-width: 799px) {
   .hero {
-    height: 750px;
+    width: 768px;
+    height: 729px;
   }
 
   nav {
@@ -69,7 +70,7 @@ nav {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 649px) {
 
   .hero {
     background-color: #131313;

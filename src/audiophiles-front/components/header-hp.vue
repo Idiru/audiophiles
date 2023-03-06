@@ -19,7 +19,7 @@
 
 <style scoped>
 
-@media (min-width: 1080px) {
+@media (min-width: 800px) {
 
   header {
     font-family: 'Manrope', sans-serif;
@@ -95,9 +95,11 @@
     border-style: none;
   }
 
+
   img {
     position: relative;
     bottom: 12%;
+    width: 70%;
   }
 
   .image-tablet, .image-mobile {
@@ -106,7 +108,7 @@
 
 }
 
-@media (min-width: 650px) and (max-width: 1079px) {
+@media (min-width: 650px) and (max-width: 799px) {
 
   .container-header {
     display: flex;
@@ -186,10 +188,11 @@
   }
 
   .image-tablet {
-    width: 100%;
+    max-height: 729px;
     position: absolute;
     top: 0;
     z-index: 0;
+
   }
 
 }
