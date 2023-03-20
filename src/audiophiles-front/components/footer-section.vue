@@ -84,11 +84,11 @@ const categories = [
   background-color: #101010;
   flex-direction: column;
   align-items: center;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
   line-height: 25px;
+  letter-spacing: 2px;
   text-align: center;
   color: #838383;
   padding: 0 24px 38px 24px;
@@ -132,7 +132,6 @@ li {
   gap: 16px;
   align-items: center;
   justify-content: center;
-
 }
 
 li {
@@ -160,7 +159,6 @@ li:hover {
   .logo-container {
     display: flex;
     padding-top: 56px;
-
   }
 
   .categories {
@@ -181,7 +179,6 @@ li:hover {
 
   .copyright-note {
     padding-bottom: 0;
-
   }
   
 }
@@ -212,6 +209,11 @@ li:hover {
     display: flex;
     max-width: 540px;
     padding-bottom: 56px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
   }
 
   .logo {
@@ -229,6 +231,7 @@ li:hover {
   .categories {
     padding-top: 71px;
     padding-bottom: 0px;
+    gap: 34px;
   }
 
   .footer-text {
@@ -241,11 +244,7 @@ li:hover {
 
   .social-section-secondary {
   display: flex;
+  }
 }
-
-}
-
-
-
 
 </style>

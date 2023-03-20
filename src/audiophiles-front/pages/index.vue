@@ -2,6 +2,7 @@
   <div class="hero">
     <navbar/>
   </div>
+  <photo-section/>
   <footer-section/>
 </template>
 
@@ -15,96 +16,34 @@ body {
   margin: 0;
 }
 
-nav {
-  width: auto;
+.hero {
+  padding-bottom: 100px;
 }
 
 
-/* Mobile new */
 
-.product-category-section {
-  margin-bottom: calc(120px + 40%);
-}
+/* Mobile */
 
-/* Desktop */
-
-@media (min-width: 800px) {
-  .hero {
-    background-color: #121212;
-    width: 100%;
-  }
-
-  .product-category-section {
-    padding: 120px 165px 168px 165px;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-}
 
 /* Tablet */
 
-@media (min-width: 650px) and (max-width: 799px) {
-  .hero {
-    width: 768px;
-    height: 729px;
-  }
-
-  nav {
-    position: relative;
-    z-index: 999;
-  }
-
-  hr {
-    position: relative;
-    z-index: 999;
-  }
-
-  .product-category-section {
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
+@media (min-width: 768px) {
 
 }
 
-/* Mobile */
-@media (max-width: 649px) {
 
-  .hero {
-    background-color: #131313;
-    height: 600px;
-}
+/* Desktop */
 
-  nav {
-    position: relative;
-    z-index: 999;
-  }
-
-  hr {
-    position: relative;
-    z-index: 999;
-  }
-
-  .product-category-section {
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
+@media (min-width: 1200px) {
 
 }
+
 
 </style>
 <script>
 import FooterSection from "../components/footer-section";
+import PhotoSection from "../components/photo-section";
 export default {
-  components: {FooterSection}
+  components: {PhotoSection, FooterSection}
 }
 </script>
