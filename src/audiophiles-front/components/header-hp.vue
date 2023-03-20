@@ -279,6 +279,8 @@
     position: absolute;
     top: 5%;
     z-index: 0;
+    object-fit: cover;
+    height: calc(600px - 5%);
   }
 
 

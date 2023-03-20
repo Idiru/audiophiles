@@ -1,11 +1,8 @@
 <template>
   <div class="hero">
-    <navbar />
-    <header-hp/>
+    <navbar/>
   </div>
-  <div class="product-category-section">
-    <product-category/>
-  </div>
+  <footer-section/>
 </template>
 
 <style>
@@ -20,6 +17,13 @@ body {
 
 nav {
   width: auto;
+}
+
+
+/* Mobile new */
+
+.product-category-section {
+  margin-bottom: calc(120px + 40%);
 }
 
 /* Desktop */
@@ -99,27 +103,8 @@ nav {
 
 </style>
 <script>
-
-/*
-const categoriesLinks = [
-
- {
-    name: "headphones",
-    url: "../assets/shared/desktop/image-category-thumbnail-headphones.png"
-  },
-
-  {
-    name: "speakers",
-    url: "../assets/shared/desktop/image-category-thumbnail-speakers.png"
-  },
-
-  {
-    name: "earphones",
-    url: "../assets/shared/desktop/image-category-thumbnail-earphones.png"
-  }
-]
-
-
- */
-
+import FooterSection from "../components/footer-section";
+export default {
+  components: {FooterSection}
+}
 </script>
