@@ -27,10 +27,13 @@
 }
 
 .container-image {
+  min-width: 327px;
+  width: 80%;
   text-align: center;
   background-image: url("/shared/mobile/image-best-gear.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 327px;
   border-radius: 10px;
   margin: auto;
@@ -69,6 +72,7 @@ p {
 
   .container-image {
       background-image: url("/shared/tablet/image-best-gear.jpg");
+      width: 100%;
   }
 
   h3 {
@@ -86,8 +90,8 @@ p {
     flex-direction: row-reverse;
     justify-content: center;
     gap: 125px;
-    padding-right: 125px;
-    padding-left: 125px;
+    margin-right: 125px;
+    margin-left: 125px;
   }
 
   .container-image {

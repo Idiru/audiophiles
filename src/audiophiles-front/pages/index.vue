@@ -2,6 +2,9 @@
   <div class="hero">
     <navbar/>
   </div>
+  <product-highlight1/>
+  <product-highlight2bis/>
+  <product-highlight3/>
   <photo-section/>
   <footer-section/>
 </template>
@@ -43,7 +46,9 @@ body {
 <script>
 import FooterSection from "../components/footer-section";
 import PhotoSection from "../components/photo-section";
+import ProductHighlight3 from "../components/product-highlight-3";
+import ProductHighlight2bis from "../components/product-highlight-2bis";
 export default {
-  components: {PhotoSection, FooterSection}
+  components: {ProductHighlight2bis, ProductHighlight3, PhotoSection, FooterSection}
 }
 </script>
