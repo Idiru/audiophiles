@@ -1,10 +1,7 @@
 <template>
     <div class="container-section-highlight-1">
     <div class="container-content">
-      <div class="container-circle-1">
-
-      </div>
-      <img src="/home/mobile/image-speaker-zx9.png" alt="speaker">
+      <div class="product-image"></div>
       <div class="container-text">
         <h3>ZX9<br>SPEAKER</h3>
         <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
@@ -38,7 +35,8 @@
   display: flex;
   flex-direction: column;
   background-color: #D87D4A;
-  width: 100%;
+  width: 90%;
+  min-width: 327px;
   height: 600px;
   border-radius: 8px;
   display: flex;
@@ -46,8 +44,12 @@
   align-items: center;
 }
 
-img {
+.product-image {
+  background-image: url("/home/mobile/image-speaker-zx9.png");
+  background-position: center;
+  background-size: cover;
   height: 207px;
+  width: 172.25px;
 }
 
 .container-text {
@@ -80,6 +82,7 @@ p {
   mix-blend-mode: normal;
   opacity: 0.75;
   padding: 24px 0;
+  max-width: 280px;
 }
 
 button {
@@ -90,6 +93,44 @@ button {
 button:hover {
   background: transparent;
   color: #000000;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+  .container-section-highlight-1 {
+    height: 720px;
+  }
+
+  .container-content {
+    width: 100%;
+    padding-top: 55px;
+  }
+
+  .product-image {
+    background-image: url("/home/tablet/image-speaker-zx9.png");
+    height: 237px;
+    width: 197.21px;
+  }
+
+  h3 {
+    padding-top: 64px;
+    font-size: 56px;
+    line-height: 58px;
+  }
+
+  p {
+    padding-bottom: 40px;
+  }
+
+
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
 }
 
 </style>

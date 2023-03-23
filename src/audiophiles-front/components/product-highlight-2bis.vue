@@ -37,10 +37,13 @@ import PrimaryButton from "./primary-button";
 
 .container-text {
     padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h3 {
-  padding-top: 101px;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;

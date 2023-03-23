@@ -82,7 +82,6 @@ button {
   .container-text {
     height: 320px;
     justify-content: center;
-    margin-bottom: 24px;
     margin-left: 6px;
   }
 }
