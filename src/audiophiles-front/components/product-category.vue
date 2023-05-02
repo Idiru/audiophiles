@@ -44,8 +44,13 @@ return require(`~/assets/shared/desktop/${fileName}.png`)
 
 <style scoped>
 
+
+/* Mobile */
+
 .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   gap: 10px;
 
@@ -122,17 +127,26 @@ button {
   align-items: center;
 }
 
-@media (max-width: 1080px) {
+/* Tablet */
+
+@media (min-width: 768px) {
   .container {
-    width: 327px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
     gap: 16px;
     position: relative;
 
   }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
 
 }
+
 
 </style>

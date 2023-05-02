@@ -39,7 +39,6 @@ import PrimaryButton from "./primary-button";
     padding-left: 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -81,7 +80,7 @@ h3 {
   }
 
   .container-section-highlight-2 {
-    margin: 48px 165px 24px 165px;
+    margin: 0px 165px 24px 165px;
   }
 
 }

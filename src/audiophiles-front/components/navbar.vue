@@ -12,7 +12,6 @@
     </div>
     <hr>
   </nav>
-
 </template>
 
 <script setup>

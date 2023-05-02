@@ -100,8 +100,8 @@ button:hover {
 @media (min-width: 768px) {
 
   .container-section-highlight-1 {
-    height: 720px;
-  }
+  padding: 96px 40px 32px 40px;
+}
 
   .container-content {
     width: 100%;
@@ -110,6 +110,8 @@ button:hover {
 
   .product-image {
     background-image: url("/home/tablet/image-speaker-zx9.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 237px;
     width: 197.21px;
   }
@@ -130,6 +132,41 @@ button:hover {
 /* Desktop */
 
 @media (min-width: 1200px) {
+
+  .container-section-highlight-1 {
+  padding: 169px 165px 48px 165px;
+  }
+
+  .container-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: normal;
+    height: 520px;
+    width: 1110px;
+    overflow: hidden;
+  }
+
+  .container-text {
+    align-items: normal;
+  }
+
+  h3 {
+    padding-top: 79px;
+  }
+
+  h3, p {
+    text-align: inherit;
+  }
+
+  .product-image {
+    background-image: url("/home/desktop/image-speaker-zx9.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 493px;
+    width: 410px;
+    top: 8%;
+    position: relative;
+  }
 
 }
 
