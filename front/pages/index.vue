@@ -1,6 +1,7 @@
 <template>
   <div class="hero">
     <navbar/>
+    <header-hp/>
   </div>
   <product-highlight1/>
   <product-highlight2bis/>
