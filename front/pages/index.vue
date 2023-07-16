@@ -22,6 +22,7 @@ body {
 
 .hero {
   padding-bottom: 100px;
+  background-color: #141414;
 }
 
 

@@ -46,7 +46,7 @@ const categories = [
 }
 
 nav {
-  background-color: #101010;
+  background-color: #141414;
   display: flex;
   flex-flow: column;
 }

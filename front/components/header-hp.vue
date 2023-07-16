@@ -28,6 +28,10 @@
   justify-content: center;
   text-align: center;
   background-position: bottom;
+  background-image: url("/home/tablet/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 600px;
 }
 
 h1 {
@@ -87,6 +91,24 @@ button {
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    background-image: url("/home/tablet/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 729px;
+    max-width: 800px;
+
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
 }
 
 </style>
